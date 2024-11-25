@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="game-container">
-
+      <GameStatus :winner="winner" :isDraw="isDraw" :currentPlayer="currentPlayer"/>
     <div class="game-status">
     </div>
     <div class="board">
@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import GameStatus from './GameStatus.vue';
 
 export default {
   name: 'GameBoard',
