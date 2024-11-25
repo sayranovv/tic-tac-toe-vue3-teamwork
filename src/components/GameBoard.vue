@@ -3,7 +3,6 @@
     <div class="game-container">
 
     <div class="game-status">
-      <GameStatus :winner="winner" :isDraw="isDraw" :currentPlayer="currentPlayer"/>
     </div>
     <div class="board">
         <div class="row" v-for="(row, rowIndex) in board" :key="rowIndex">
@@ -19,7 +18,6 @@
 </template>
 
 <script>
-import GameStatus from './GameStatus.vue';
 
 export default {
   name: 'GameBoard',
@@ -108,51 +106,4 @@ export default {
 </script>
 
 <style scoped>
-.game-container {
-  display: flex;
-  flex-direction: column; /* размещаем элементы по вертикали */
-  align-items: center; /* выравниваем по горизонтали */
-  height: 100vh; /* растягиваем контейнер на всю высоту экрана */
-  text-align: center;
-}
-
-.board {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
-  gap: 10px;
-  margin: 20px 0;
-}
-
-.cell {
-  font-family: "Martian Mono", sans-serif;
-  margin-top: 10px;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  border: 2px solid #7B586B;
-  cursor: pointer;
-  border-radius: 10px;
-  color: #453C41;
-}
-
-button {
-  font-family: "Martian Mono", sans-serif;
-  letter-spacing: 0.005rem;
-  font-size: 0.9rem;
-  margin-top: 30px;
-  padding: 10px 20px;
-  background-color: #7B586B;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-button:hover {
-  background-color: #453C41;
-}
 </style>
