@@ -1,19 +1,12 @@
-# tic-tac-toe-vue3-teamwork
+# Крестики-нолики
+Описание: Два игрока поочередно делают ходы на поле 3x3, пытаясь составить линию из трех своих символов (крестиков или ноликов).
+Особенности реализации: Массив для хранения состояния игрового поля, функции для вывода поля, проверки победы и обработки хода.
+Основные элементы: Циклы для итерации ходов и проверки условий победы.
 
-## Project setup
-```
-npm install
-```
+## Инструкция по запуску
+Проект залит на удалённый хостинг, поэтому запустить игру можно по ссылке: https://tictactoe-vue3.web.app/
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Или:
+- клонируйте репозиторий
+- `npm install`
+- `npm run serve`
